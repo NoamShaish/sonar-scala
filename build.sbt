@@ -25,6 +25,7 @@ scalafmtOnCompile in ThisBuild := true
 scalafmtVersion in ThisBuild := "1.4.0"
 scapegoatVersion in ThisBuild := "1.3.8"
 scapegoatReports := Seq("xml")
+scalacOptions in Scapegoat += "-P:scapegoat:overrideLevels:TraversableHead=Warning:OptionGet=Warning"
 coverageOutputXML := true
 coverageOutputHTML := false
 coverageOutputCobertura := false
